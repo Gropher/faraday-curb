@@ -1,8 +1,6 @@
 module Faraday
   class Adapter
     class Curb < Faraday::Adapter
-      dependency 'curb'
-
       def call(env)
         super
         perform_request env
